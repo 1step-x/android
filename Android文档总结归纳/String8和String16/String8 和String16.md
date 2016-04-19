@@ -1,5 +1,6 @@
 #String8 和String16
 >String8 和String16是android底层库单字节字符和双字符字符的实现。
+
 ```cpp
 system/core/include/utils/String8.h
 system/core/libutils/String8.cpp
@@ -82,8 +83,8 @@ String8 提供了10个构造函数，主要由上面两种实现。
  * String8::String8(const char32_t* o)
  * String8::String8(const char32_t* o, size_t len)
 
-2、其他函数
-赋值函数
+###2、其他函数
+**赋值函数**
 ```
 [1]
 void String8::setTo(const String8& other)
@@ -106,7 +107,7 @@ status_t String8::setTo(const char* other)
 }
 ```
 
-添加函数
+**添加函数**
 ```
 [1]
 status_t String8::append(const String8& other)
